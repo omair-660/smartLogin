@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,21 @@
 </head>
 
 <body>
-    <div action="" class="overflow-hidden position-relative">
+    <div class="home bg-black w-100 vh-100  position-fixed z-3">
+        <nav class="align-items-center container d-flex justify-content-between pt-4 w-100">
+            <h2 class="logo text-white">
+                home
+            </h2>
+            <button class="btn btn-danger logOut text-capitalize fw-bold"><i class="fa-right-from-bracket fa-solid me-2 text-white"></i>log Out</button>
+
+        </nav>
+        <div class="text-center text-capitalize container w-100 h-100 d-flex justify-content-center align-items-center">
+            <h2 class="hello text-light">Hello</h2>
+        </div>
+
+    </div>
+
+    <form action="" class=" position-relative">
         <div class="bg"></div>
         <div class="bg1"></div>
         <div class="container d-flex overflow-hidden justify-content-center align-items-center vh-100 w-50">
@@ -52,10 +66,10 @@
             <div class="sign-up w-75">
                 <h1 class="text-center text-capitalize mb-3 fw-bold">sign up</h1>
                 <div class="d-flex align-items-center position-relative">
-                    <i class="fa-solid fa-user position-absolute mb-3"></i><input type="text"
-                        class="ps-4 form-control mb-3 w-100 mx-auto" placeholder="Inter Name">
-
+                    <i class="fa-solid fa-user position-absolute mt-2"></i><input type="text"
+                        class="ps-4 form-control mb-3 w-100 mx-auto mt-4" placeholder="Inter Name">
                 </div>
+                <div class="alert alert-danger d-none errorName">"The name must be more than 3 and less than 11.."</div>
                 <div class="d-flex align-items-center position-relative">
                     <i class="fa-solid fa-envelope position-absolute mb-3"></i><input type="email"
                         class="ps-4 form-control mb-3 w-100 mx-auto" placeholder="Inter EMail">
@@ -80,7 +94,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
