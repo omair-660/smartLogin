@@ -237,6 +237,7 @@ function clearData() {
     inputPassIn.value = "";
     inputEmailUp.value = "";
     inputPassUp.value = "";
+    inputTextUp.value = "";
 }
 show.innerHTML = "show pass";
 showUp.innerHTML = "show pass";
